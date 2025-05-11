@@ -810,7 +810,7 @@ def main():
             company_size = st.selectbox("회사 규모", ["스타트업(30인 미만)", "중소기업(30-300인)", "중견기업(300-1000인)", "대기업(1000인 이상)"])
         
         # 분석 시작 버튼
-        if st.button("상담 시작"):
+        if st.button("상담 시작", key="employment_consultation"):
             if question:
                 # 코치 팀 초기화
                 hr_team = HRPartnerTeam(api_key)
@@ -852,7 +852,7 @@ def main():
             company_size = st.selectbox("회사 규모", ["스타트업(30인 미만)", "중소기업(30-300인)", "중견기업(300-1000인)", "대기업(1000인 이상)"])
         
         # 분석 시작 버튼
-        if st.button("상담 시작"):
+        if st.button("상담 시작", key="compensation_consultation"):
             if question:
                 # 코치 팀 초기화
                 hr_team = HRPartnerTeam(api_key)
@@ -896,7 +896,7 @@ def main():
         career_goal = st.text_input("경력 목표", placeholder="예: 2년 내 팀장 승진, 다른 부서로 이동, 전문성 강화")
         
         # 분석 시작 버튼
-        if st.button("상담 시작"):
+        if st.button("상담 시작", key="performance_consultation"):
             if question:
                 # 코치 팀 초기화
                 hr_team = HRPartnerTeam(api_key)
@@ -950,7 +950,7 @@ def main():
                                 ["갈등 회피형", "타협 추구형", "직설적 표현형", "분석적 접근형", "관계 중시형", "과업 중시형"])
     
     # 분석 시작 버튼
-    if st.button("상담 시작"):
+    if st.button("상담 시작", key="workplace_issue_consultation"):
         if question:
             # 코치 팀 초기화
             hr_team = HRPartnerTeam(api_key)
@@ -1000,7 +1000,7 @@ def main():
         workplace_culture = st.selectbox("현 직장 문화 특성", ["수직적/보수적", "수평적/자유로운", "성과 중심적", "관계 중심적", "혼합형", "잘 모르겠음"])
         
         # 분석 시작 버튼
-        if st.button("상담 시작"):
+        if st.button("상담 시작", key="career_consultation"):
             if question:
                 # 코치 팀 초기화
                 hr_team = HRPartnerTeam(api_key)
